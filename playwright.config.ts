@@ -36,17 +36,21 @@ export default defineConfig({
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: { ...devices['Desktop Chrome'],
+        baseURL: 'https://magento.softwaretestingboard.com/'
+       },
     },
 
     {
       name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
+      use: { ...devices['Desktop Firefox'],
+        baseURL: 'https://magento.softwaretestingboard.com/' },
     },
 
     {
       name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
+      use: { ...devices['Desktop Safari'],
+        baseURL: 'https://magento.softwaretestingboard.com/' },
     },
 
     /* Test against mobile viewports. */
